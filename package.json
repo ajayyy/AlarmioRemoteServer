@@ -1,0 +1,15 @@
+{
+  "name": "alarmioremote-server",
+  "version": "1.0.0",
+  "description": "Server to control AlarmioRemote",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ajay Ramachandran",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
