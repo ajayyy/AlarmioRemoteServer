@@ -14,9 +14,7 @@ http.createServer(app).listen(config.port);
 app.get("/api/v1/allowAlarmDismiss/:authCode/", function (req, res) {
     let authCode = req.params.authCode;
 
-    res.send({
-        allowed: Date.now() < allowedAlarms[authCode]
-    });
+    res.send(JSON.stringify(Date.now() < allowedAlarms[authCode]));
 });
 
 app.post("/api/v1/allowAlarmDismiss/:authCode/:time?", function (req, res) {
